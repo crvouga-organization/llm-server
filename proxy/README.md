@@ -57,10 +57,10 @@ Production runtime env is synced from Vault via infra deploy-pipeline.
 
 ## Deployment
 
-Push to `main` runs **Publish image** (migrations + `ghcr.io/crvouga-organization/chrisvouga-llm-proxy`) and dispatches infra **Deploy Pipeline**.
+Push to `main` runs **Publish image** (migrations + `ghcr.io/crvouga/chrisvouga-llm-proxy`) and dispatches infra **Deploy Pipeline**.
 
 ```bash
-docker run -e DATABASE_URL='...' -p 8080:8080 ghcr.io/crvouga-organization/chrisvouga-llm-proxy:latest
+docker run -e DATABASE_URL='...' -p 8080:8080 ghcr.io/crvouga/chrisvouga-llm-proxy:latest
 ```
 
 ## Proxy config
